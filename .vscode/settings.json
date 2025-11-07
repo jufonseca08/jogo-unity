@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "My project-júlia.sln"
+    "dotnet.defaultSolution": "jogo-unity.sln"
 }
