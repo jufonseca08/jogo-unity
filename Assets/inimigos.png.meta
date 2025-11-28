@@ -272,13 +272,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: inimigos_1
+      name: 2
       rect:
         serializedVersion: 2
         x: 153
-        y: 193
-        width: 82
-        height: 120
+        y: 312
+        width: 2
+        height: 1
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1380,7 +1380,7 @@ TextureImporter:
         width: 1
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1407,8 +1407,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      2: -4848585047923917627
       inimigos_0: -7376822450380381918
-      inimigos_1: -4848585047923917627
       inimigos_1.1: -8544529065540369722
       inimigos_1.10: 7110537540646677234
       inimigos_1.11: 8780977831923800932
