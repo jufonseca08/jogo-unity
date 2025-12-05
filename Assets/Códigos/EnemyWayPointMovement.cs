@@ -9,6 +9,7 @@ public class EnemyWaypointMovement : MonoBehaviour
     public float moveSpeed = 3f;
     public float waypointReachedDistance = 0.1f;
     public bool loop = true;
+    public Transform visual;
 
     private Rigidbody2D rb;
     private int currentWaypointIndex = 0;
@@ -49,6 +50,15 @@ public class EnemyWaypointMovement : MonoBehaviour
 
         Vector2 targetPosition = waypoints[currentWaypointIndex].position;
         movementDirection = (targetPosition - (Vector2)transform.position).normalized;
+
+        if (movementDirection.x > 0.01f)
+       {
+        visual.localScale = new Vector3(3, 3, 1);
+       }
+       else
+       {
+        visual.localScale = new Vector3(-3, 3, 1);
+       }
 
         rb.linearVelocity = movementDirection * moveSpeed;
     }
