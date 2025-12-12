@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // <-- 1. Importar o gerenciador de cenas
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -35,6 +36,22 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player morreu!");
-        gameObject.SetActive(false);
+        
+        // 2. Desabilitamos o objeto do jogador, como você já estava fazendo.
+        gameObject.SetActive(false); 
+
+        // 3. Chamamos o método de reinício com um pequeno atraso de 2 segundos.
+        // Isso dá tempo para a mensagem de 'Player morreu!' ser lida.
+        Invoke("RestartCurrentScene", 2f); 
+    }
+
+    // 4. Novo método para reiniciar a cena
+    void RestartCurrentScene()
+    {
+        // Pega o índice da cena atualmente ativa (ex: 0, 1, 2)
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Recarrega a cena.
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
