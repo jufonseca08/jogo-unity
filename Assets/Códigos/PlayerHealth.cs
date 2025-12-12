@@ -1,15 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // <-- 1. Importar o gerenciador de cenas
+using UnityEngine.SceneManagement; 
 
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
-
     public float currentHealth;
     
     private Rigidbody2D rb;
 
-    public HealthBar healthBar;
+    public HealthBar healthBar; // O script da sua barra de vida
     
     void Start()
     {
@@ -19,13 +18,17 @@ public class PlayerHealth : MonoBehaviour
     
     public void TakeDamage(float damage, Vector2 knockbackDirection, float knockbackForce = 10f)
     {
+        if (currentHealth <= 0) return; // Se já estiver morto, ignore o dano
+
         currentHealth -= damage;
         Debug.Log("Player levou dano! Vida atual: " + currentHealth);
         
-        // Aplica knockback
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        if (healthBar != null)
+        {
+            healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        }
 
         if (currentHealth <= 0)
         {
@@ -37,21 +40,22 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player morreu!");
         
-        // 2. Desabilitamos o objeto do jogador, como você já estava fazendo.
+        // Desabilita o objeto do jogador imediatamente
         gameObject.SetActive(false); 
 
-        // 3. Chamamos o método de reinício com um pequeno atraso de 2 segundos.
-        // Isso dá tempo para a mensagem de 'Player morreu!' ser lida.
+        // Chama o método de reinício após 2 segundos de atraso
         Invoke("RestartCurrentScene", 2f); 
     }
 
-    // 4. Novo método para reiniciar a cena
     void RestartCurrentScene()
     {
-        // Pega o índice da cena atualmente ativa (ex: 0, 1, 2)
+        // Despausa o jogo, caso ele tenha sido pausado
+        Time.timeScale = 1f; 
+        
+        // 1. Pega o índice da cena atualmente ativa
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        // Recarrega a cena.
+        // 2. Recarrega a cena.
         SceneManager.LoadScene(currentSceneIndex);
     }
 }

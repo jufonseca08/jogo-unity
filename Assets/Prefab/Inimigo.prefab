@@ -168,7 +168,7 @@ MonoBehaviour:
   loop: 1
   damage: 10
   attackCooldown: 1
-  knockbackForce: 60
+  knockbackForce: 10
 --- !u!50 &1873209816958380924
 Rigidbody2D:
   serializedVersion: 5
