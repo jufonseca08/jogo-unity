@@ -212,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3372629
+      value: 0.25712922
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.23
+      value: -2.1899
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -285,11 +285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.95
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -451,7 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291641002}
   m_Layer: 0
-  m_Name: Waypoint (3)
+  m_Name: Waypoint4
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -703,7 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385403180}
   m_Layer: 0
-  m_Name: Waypoint
+  m_Name: Waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -734,7 +734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423843506}
   m_Layer: 0
-  m_Name: Waypoint (2)
+  m_Name: Waypoint3
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1788,7 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1423306234}
   m_Layer: 0
-  m_Name: Waypoint (4)
+  m_Name: Waypoint6
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1803,7 +1803,7 @@ Transform:
   m_GameObject: {fileID: 1423306233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.85, y: 0.75, z: 0}
+  m_LocalPosition: {x: 16.85, y: 0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2018,7 +2018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1720573756}
   m_Layer: 0
-  m_Name: Waypoint (1)
+  m_Name: Waypoint2
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2179,7 +2179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776379778}
   m_Layer: 0
-  m_Name: Waypoint (5)
+  m_Name: Waypoint5
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2194,7 @@ Transform:
   m_GameObject: {fileID: 1776379777}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.33, y: 0.75, z: 0}
+  m_LocalPosition: {x: 13.24, y: 0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2457,7 +2457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 30111512514650340, guid: 4345983d83ee8cd419769748548645b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 30111512514650340, guid: 4345983d83ee8cd419769748548645b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2509,7 +2509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239883034177404725, guid: 4345983d83ee8cd419769748548645b0, type: 3}
       propertyPath: m_Name
-      value: Inimigo (2)
+      value: Inimigo3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2574,7 +2574,7 @@ PrefabInstance:
       objectReference: {fileID: 291641002}
     - target: {fileID: 5239883034177404725, guid: 4345983d83ee8cd419769748548645b0, type: 3}
       propertyPath: m_Name
-      value: Inimigo (1)
+      value: Inimigo2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2603,11 +2603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.61
+      value: 14.06
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.28
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8104755854785165880, guid: f2e1862e560ca32469222bff3afdce4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2729,11 +2729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.266
+      value: 14.57
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.55
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2354618926992551697, guid: 4edc66ffe76723944888cb0d2d55ee0b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2834,7 +2834,7 @@ PrefabInstance:
       objectReference: {fileID: 1720573756}
     - target: {fileID: 5239883034177404725, guid: 4345983d83ee8cd419769748548645b0, type: 3}
       propertyPath: m_Name
-      value: Inimigo
+      value: Inimigo1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
